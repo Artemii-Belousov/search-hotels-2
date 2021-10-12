@@ -1,9 +1,76 @@
+.logo__top {
+  padding: 30px 0 62px 30px;
+  background: rgba(31, 32, 65, 0.05);
+}
+
+.container {
+  padding: 15px 140px 15px 140px;
+}
+
+.header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 38px;
+  background-color: #ffffff;
+}
+
+.header__wrap .nav {
+  margin-left: auto;
+}
+
+.header__wrap .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.header__wrap .nav ul li {
+  margin-right: 20px;
+}
+
+.header__wrap .nav ul li .expand_more {
+  padding-left: 7px;
+}
+
+.header__wrap .btn__nav {
+  border: 2px solid #BC9CFF;
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #BC9CFF;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  padding: 13px 20px 13px 20px;
+  border-radius: 22px;
+}
+
+.header__wrap .btn__nav:hover {
+  cursor: pointer;
+  background-color: #BC9CFF;
+  color: #ffffff;
+}
+
+.header__wrap .btn__registration {
+  margin-left: 20px;
+}
+
 * {
   margin: 0;
 }
 
-.logo__top {
-  padding: 30px 0 62px 30px;
-  background: rgba(31, 32, 65, 0.05);
+body {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+  background-color: rgba(31, 32, 65, 0.05);
 }
 /*# sourceMappingURL=style.css.map */
