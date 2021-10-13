@@ -1,17 +1,33 @@
+.header {
+    margin: 0 auto;
+}
 .logo__top {
     padding: 30px 0 62px 30px;
-    background: $DarkShade05;
+    //background: $DarkShade05;
+}
+.logo {
+    padding-left: 140px;
+    display: flex;
+    align-items: center;
+}
+.logo a {
+    margin-right: 12px;
+}
+.header__wrap {
+    background-color: #ffffff;
+    margin-bottom: 38px;
+    padding: 15px 0 15px 0;
 }
 
 .container {
-    padding: 15px 140px 15px 140px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
-.header__wrap {
+.header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 38px;
-    background-color: #ffffff;
+
     .nav {
         margin-left: auto;
         ul {
@@ -20,32 +36,74 @@
 
             li {
                 margin-right: 20px;
+                a {
+                    text-decoration: none;
+                    @include bodyText50;
+                    svg{
+                    //fill: red;
+
+                    }
+                }
+                a:hover {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 17px;
+
+                    color: rgba(31, 32, 65, 0.75);
+                }
                 .expand_more {
                     padding-left: 7px;
+                }
+                .expand_more{
+                    fill: rgba(31, 32, 65, 0.5);
+                }
+                a:hover > .expand_more{
+                    fill: rgba(31, 32, 65, 0.75);;
                 }
             }
         }
     }
-    .btn__nav {
-        border: 2px solid $Purple;
-        background-color: #ffffff;
-        font-weight: bold;
+    .nav ul li:hover {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
 
-        color: $Purple;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase;
-        padding: 13px 20px 13px 20px;
-        border-radius: 22px;
-        
-
+        color: rgba(31, 32, 65, 0.75);
     }
-    .btn__nav:hover{
+
+    .button__default {
+        padding-right: 140px;
+        .btn__nav {
+            border: 2px solid $Purple;
+            background-color: #ffffff;
+            font-weight: bold;
+
+            color: $Purple;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            padding: 13px 20px 13px 20px;
+            border-radius: 22px;
+        }
+        .btn__nav:hover {
+            cursor: pointer;
+            background-color: $Purple;
+            color: #ffffff;
+        }
+        .btn__registration {
+            margin-left: 20px;
+        }
+    }
+    .user__name {
+        padding: 10px 140px 10px 20px;
+        border-left: 1px solid rgba(31, 32, 65, 0.1);
+    }
+    .user__name:hover {
         cursor: pointer;
-        background-color: $Purple;
-        color: #ffffff;
-    }
-    .btn__registration{
-        margin-left: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: rgba(31, 32, 65, 0.75);
     }
 }
