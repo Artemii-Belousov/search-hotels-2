@@ -1,0 +1,26 @@
+.footer {
+    background-color: #ffffff;
+    padding: 100px 0 100px 0;
+}
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__wrap_style {
+    max-width: 260px;
+    h3{
+        @include text-h3
+    }
+    ul {
+        padding: 0;
+        li {
+            list-style-type: none;
+        }
+    }
+}
+.discription {
+    padding-left: 140px;
+}
+.subscription {
+    padding-right: 140px;
+}
