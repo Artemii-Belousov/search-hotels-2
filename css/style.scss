@@ -6,15 +6,22 @@
 
 *{
     margin: 0;
+    padding: 0;
 }
+
 body{
     font-family: 'Montserrat', sans-serif;
     
-    font-weight: normal;
+    font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: $DarkShade50;
     background-color: $DarkShade05;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
 
