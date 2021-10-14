@@ -39,10 +39,6 @@
                 a {
                     text-decoration: none;
                     @include bodyText50;
-                    svg{
-                    //fill: red;
-
-                    }
                 }
                 a:hover {
                     font-weight: bold;
